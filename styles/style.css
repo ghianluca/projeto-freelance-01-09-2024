@@ -175,12 +175,13 @@ header span {
 .select-sizes {
     display: flex;
     align-items: center;
+    gap: 20px;
     justify-content: space-around;
 }
 
 .select-size {
     display: flex;
-    width: 190px;
+    width: 100%;
     height: 80px;
     justify-content: center;
     align-items: center;
@@ -200,3 +201,64 @@ header span {
     color: #FFF;
     cursor: pointer;
 }
+
+/* END BOOK SIZE SECTION */
+
+/* PAGE MARKER SECTION */
+
+.section-page-marker {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    padding: 50px 500px 0 10%;
+}
+
+.container-page-marker {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    padding: 15px 20px 20px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #FFF;
+}
+
+.page-marker-text {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.select-markers {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.select-marker {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4A261;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.select-marker input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.select-marker label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFF;
+    cursor: pointer;
+}
+
+/* END PAGE MARKER SECTION */
