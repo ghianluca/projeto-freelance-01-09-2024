@@ -42,12 +42,13 @@ header span {
     width: 100vw;
     overflow: hidden;
     position: relative;
+    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
 }
 
 .scrolling-alert {
     display: flex;
     width: max-content;
-    animation: slide-left 1000s linear infinite;
+    animation: slide-left 100000s linear infinite;
 }
 
 .item {
