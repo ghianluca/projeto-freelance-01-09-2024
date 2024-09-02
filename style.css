@@ -5,6 +5,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    outline: none;
+}
+
+html, body {
+    background-color: #E9E9E9;
 }
 
 header {
@@ -63,4 +68,68 @@ header span {
     100% {
         transform: translateX(-100%);
     }
+}
+
+.section-info-book {
+    display: flex;
+    gap: 10px;
+    width: 100vw;
+    height: auto;
+    padding: 120px 500px 0 10%;
+}
+
+.container-info-book {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    padding: 15px 20px 20px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #FFF;
+}
+
+.info-book-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-book-left {
+    width: 50%;
+}
+
+.info-book-left .fildelabel {
+    margin: 15px 0 5px 0;
+    color: #1E1E1E;
+    font-weight: 500;
+}
+
+.info-book-left .info-book-inputs {
+    padding: 20px;
+}
+
+.info-book-left .info-book-selects {
+    padding: 20px;
+}
+
+.info-book-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-book-right {
+    width: 50%;
+}
+
+.info-book-right .fildelabel {
+    margin: 15px 0 5px 0;
+    color: #1E1E1E;
+    font-weight: 500;
+}
+
+.info-book-right .info-book-inputs {
+    padding: 20px;
+}
+
+.info-book-right .info-book-selects {
+    padding: 20px;
 }
