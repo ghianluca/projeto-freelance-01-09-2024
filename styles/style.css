@@ -16,6 +16,89 @@ html, body {
 
 /* END GLOBAL */
 
+/**/
+
+.div-right-fix {
+    padding: 120px 20px 20px 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 998;
+    width: 350px;
+    height: 100svh;
+    background: linear-gradient(to bottom, #4A5BF0,#1A31C1);
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 50%;
+    border-bottom: 1px dotted #FFF;
+}
+
+.total {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #FFF;
+}
+
+.rs {
+    font-size: 1.5rem;
+    color: #FFF;
+}
+
+.rs-price {
+    margin-top: 60px;
+    margin-bottom: 10px;
+    font-size: 4rem;
+    color: #FFF;
+}
+
+.price-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 50%;
+}
+
+.price-button button {
+    width: 100%;
+    height: 80px;
+    border-radius: 8px;
+    border: none;
+    color: #FFF;
+    background-color: #F4A261;
+    font-size: 1rem;
+    font-weight: 800;
+    margin-top: 55px;
+    margin-bottom: 15px;
+}
+
+.price-uni {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.rs-uni {
+    font-size: 1.6rem;
+}
+
+.price-button span {
+    color: #FFF;
+}
+
+.price-button .alert-span-div-fix {
+    font-size: 0.9rem;
+}
+
+/**/
+
 /* HEADER AND ALERT */
 header {
     display: flex;
