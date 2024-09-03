@@ -168,7 +168,7 @@ header span {
 
 .book-size-text {
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #1E1E1E;
 }
@@ -186,7 +186,7 @@ header span {
     height: 80px;
     justify-content: center;
     align-items: center;
-    background-color: #F4A261;
+    background-color: #4A5BF0;
     border-radius: 4px;
     padding: 20px;
 }
@@ -197,7 +197,7 @@ header span {
 }
 
 .select-size label {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: bold;
     color: #FFF;
     cursor: pointer;
@@ -228,7 +228,7 @@ header span {
 
 .page-marker-text {
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #1E1E1E;
 }
@@ -246,7 +246,7 @@ header span {
     height: 80px;
     justify-content: center;
     align-items: center;
-    background-color: #F4A261;
+    background-color: #4A5BF0;
     border-radius: 4px;
     padding: 20px;
 }
@@ -257,7 +257,7 @@ header span {
 }
 
 .select-marker label {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: bold;
     color: #FFF;
     cursor: pointer;
@@ -288,9 +288,14 @@ header span {
 
 .shrink-text {
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #1E1E1E;
+}
+.span-selects {
+    font-size: 0.9rem;
+    font-weight: 400;
+    font-style: italic;
 }
 
 .select-shrinks {
@@ -306,7 +311,7 @@ header span {
     height: 80px;
     justify-content: center;
     align-items: center;
-    background-color: #F4A261;
+    background-color: #4A5BF0;
     border-radius: 4px;
     padding: 20px;
 }
@@ -317,8 +322,67 @@ header span {
 }
 
 .select-shrink label {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: bold;
     color: #FFF;
     cursor: pointer;
 }
+
+/* END SHRINK SECTION */
+
+/* QUANTITY BOOKS SECTION */
+
+.section-quantity-books {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    padding: 50px 500px 0 10%;
+}
+
+.container-quantity-books {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    padding: 15px 20px 20px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #FFF;
+    align-items: center;
+}
+
+.quantity-books-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1E1E1E;
+    margin-bottom: 20px;
+}
+
+.quantity {
+    font-size: 48px;
+    font-weight: bold;
+    color: #4A5BF0;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.buttons button {
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    color: #4A5BF0;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.buttons button:hover {
+    font-weight: bold;
+}
+
+/* END QUANTITY BOOKS SECTION */

@@ -83,11 +83,11 @@
 				<div class="select-markers">
 					<div class="free-page-marker select-marker">
 						<input type="radio" id="free-marker" name="page-marker" value="free page marker">
-						<label for="free-marker">Sem marcadores</label>
+						<label for="free-marker">Sem marcadores<br><span class="span-selects">Não desejo marcadores de páginas</span></label>
 					</div>
 					<div class="page-marker select-marker">
 						<input type="radio" id="with-marker" name="page-marker" value="with page marker">
-						<label for="with-marker">Com marcadores</label>
+						<label for="with-marker">Com marcadores<br><span class="span-selects">Um marcador por livro</span></label>
 					</div>
 				</div>
 			</div>
@@ -100,15 +100,31 @@
 				<div class="select-shrinks">
 					<div class="free-shrink-div select-shrink">
 						<input type="radio" id="free-shrink" name="shrink" value="free shrink">
-						<label for="free-shrink">Sem shrink</label>
+						<label for="free-shrink">Sem shrink<br><span class="span-selects">Não desejo shrink</span></label>
 					</div>
 					<div class="shrink-div select-shrink">
 						<input type="radio" id="with-shrink" name="shrink" value="with shrink">
-						<label for="with-shrink">Shrink individual</label>
+						<label for="with-shrink">Shrink individual<br><span class="span-selects">Custo por livro</span></label>
 					</div>
 				</div>
 			</div>
-		</section>		
+		</section>
+		<section class="section-quantity-books">
+			<div class="container-quantity-books">
+				<div class="quantity-books-text">
+					<h3>Quantidade de Livros</h3>
+				</div>
+				<div class="quantity" id="quantity">0</div>
+				<div class="buttons">
+					<button onclick="alterarQuantidade(-100)">-100</button>
+					<button onclick="alterarQuantidade(-10)">-10</button>
+					<button onclick="alterarQuantidade(-1)">-1</button>
+					<button onclick="alterarQuantidade(1)">+1</button>
+					<button onclick="alterarQuantidade(10)">+10</button>
+					<button onclick="alterarQuantidade(100)">+100</button>
+				</div>
+			</div>
+		</section>
 	</main>
     <script src="/scripts/script.js"></script>
 </body>
