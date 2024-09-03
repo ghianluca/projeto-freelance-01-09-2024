@@ -124,6 +124,35 @@
 					<button onclick="alterarQuantidade(100)">+100</button>
 				</div>
 			</div>
+			<div class="container-book-shipping">
+				<div class="book-shipping-text">
+					<h3>Calcular Frete do Livro</h3>
+				</div>
+				<div class="input-cep">
+					<input type="text" id="cep" name="cep" placeholder="CEP..." maxlength="9">
+					<button>Calcular Frete</button>
+				</div>
+				<div class="select-sizes-book-shipping">
+					<div class="select-size-carrier">
+						<input type="radio" id="frete-gratis" name="book-shipping" value="Frete Gratis">
+						<label for="frete-gratis">Frete Grátis</label>
+						<div class="background-label"><span>Transportadora</span></div>
+						<div class="background-label-3"><span>Entrega 4 á 10 Dias Uteis</span></div>
+					</div>
+					<div class="select-size-carrier">
+						<input type="radio" id="sedex-correios" name="book-shipping" value="Sedex">
+						<label for="sedex-correios">Sedex *Correios</label>
+						<div class="background-label"><span>R$ 45,69</span></div>
+						<div class="background-label-3"><span>Entrega 3 Dias Uteis</span></div>
+					</div>
+					<div class="select-size-carrier">
+						<input type="radio" id="retirada-na-grafica" name="book-shipping" value="Retirada na Grafica">
+						<label for="retirada-na-grafica">Retirada na Gráfica</label>
+						<div class="background-label-2"><span>Transportadora</span></div>
+						<div class="background-label-3"><span>De Segunda a Sexta-feira</span></div>
+					</div>
+				</div>
+			</div>
 		</section>
 	</main>
     <script src="/scripts/script.js"></script>

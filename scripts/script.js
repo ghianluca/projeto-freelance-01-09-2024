@@ -15,3 +15,15 @@ function alterarQuantidade(valor) {
 
     quantidadeElement.textContent = quantidadeAtual;
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const cepInput = document.getElementById('cep');
+
+    cepInput.addEventListener('input', () => {
+        let value = cepInput.value.replace(/\D/g, '');
+        if (value.length > 5) {
+            value = value.slice(0, 5) + '-' + value.slice(5, 8);
+        }
+        cepInput.value = value;
+    });
+});
