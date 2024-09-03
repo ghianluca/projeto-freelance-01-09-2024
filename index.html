@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orçamento de Livro</title>
     <link rel="stylesheet" href="/styles/style.css">
+	<link rel="icon" href="/assets/favicon.png" type="image/png">
 </head>
 <body>
     <header>
@@ -31,21 +32,21 @@
     </div>
 	<main>
 		<section class="section-info-book">
-			<div class="container-info-book">
+			<div class="container-info-book" id="containerInfoBook">
 				<div class="info-book-left">
 					<label for="bookName" class="fildelabel">Nome do Livro</label>
 					<input type="text" class="info-book-inputs" id="bookName" name="BookName" data-name="Book Name" placeholder="Digite aqui...">
-					<label for="bookCover" class="fildelabel">Capa do Livros</label>
+					<label for="bookCover" class="fildelabel">Capa do Livro</label>
 					<select name="BookCover" id="bookCover" class="info-book-selects"></select>
 					<label for="colorCover" class="fildelabel">Cor da Capa</label>
 					<select name="ColorCover" id="colorCover" class="info-book-selects"></select>
-					<label for="bookEmbellishment" class="fildelabel">Capa do Livros</label>
+					<label for="bookEmbellishment" class="fildelabel">Acabamento</label>
 					<select name="BookEmbellishment" id="bookEmbellishment" class="info-book-selects"></select>
 				</div>
 				<div class="info-book-right">
 					<label for="numberPages" class="fildelabel">Quantidade de Páginas</label>
 					<input type="text" class="info-book-inputs" id="numberPages" name="NumberPages" data-name="Number Pages Name" placeholder="Digite aqui...">
-					<label for="bookBlock" class="fildelabel">Miolo do Livros</label>
+					<label for="bookBlock" class="fildelabel">Miolo do Livro</label>
 					<select name="BookBlock" id="bookBlock" class="info-book-selects"></select>
 					<label for="colorBlock" class="fildelabel">Cor do Miolo</label>
 					<select name="ColorBlock" id="colorBlock" class="info-book-selects"></select>
@@ -53,7 +54,7 @@
 					<select name="BookSpine" id="bookSpine" class="info-book-selects"></select>
 				</div>
 			</div>
-		</section>
+		</section>		
 		<section class="section-book-size">
 			<div class="container-book-size">
 				<div class="book-size-text">
@@ -175,6 +176,30 @@
 				</div>
 			</div>
 		</section>
+		<section class="section-address-form">
+			<div class="container-address-form">
+				<div class="address-form-text">
+					<h3>Endereço de Entrega</h3>
+				</div>
+				<div class="container-form">
+					<div class="form-left form">
+						<input type="text" name="" id="" placeholder="Nome">
+						<input type="text" id="cpf" placeholder="CPF" oninput="formatCPF(this)">
+						<input type="email" name="" id="" placeholder="E-mail">
+						<input type="tel" name="" id="" placeholder="Digite seu número de Telefone">
+					</div>
+					<div class="form-right form">
+						<input type="text" name="" id="" placeholder="Rua, Número">
+						<input type="text" name="" id="" placeholder="Complemento">
+						<input type="text" name="" id="" placeholder="Bairro">
+						<input type="tel" name="" id="" placeholder="Cidade">
+					</div>
+				</div>
+				<div class="form-button">
+					<button type="button" id="submitBtn">Concluir Orçamento</button>
+				</div>
+			</div>
+		</section>
 		<div class="div-right-fix">
 			<div class="price">
 				<span class="total">Total *Orçamento</span>
@@ -183,7 +208,7 @@
 			<div class="price-button">
 				<span class="price-uni">Preço Unitário</span>
 				<span class="rs-uni">R$ <span>0,00</span></span>
-				<button>Concluir Orçamento</button>
+				<button type="button" id="submitBtn">Concluir Orçamento</button>
 				<span class="alert-span-div-fix">Preencha todos os campos por gentileza</span>
 			</div>
 		</div>
