@@ -45,7 +45,10 @@
 				</div>
 				<div class="info-book-right">
 					<label for="numberPages" class="fildelabel">Quantidade de Páginas</label>
-					<input type="text" class="info-book-inputs" id="numberPages" name="NumberPages" data-name="Number Pages Name" placeholder="Digite aqui...">
+					<div class="two-inputs-pages">
+						<input type="text" class="info-book-inputs-two" id="numberPagesColor" name="NumberPagesColor" data-name="Number Pages Name Color" placeholder="Coloridas...">
+						<input type="text" class="info-book-inputs-two" id="numberPages" name="NumberPages" data-name="Number Pages Name" placeholder="Preto e Branco...">
+					</div>
 					<label for="bookBlock" class="fildelabel">Miolo do Livro</label>
 					<select name="BookBlock" id="bookBlock" class="info-book-selects"></select>
 					<label for="colorBlock" class="fildelabel">Cor do Miolo</label>
@@ -79,7 +82,7 @@
 		<section class="section-page-marker">
 			<div class="container-page-marker">
 				<div class="page-marker-text">
-					<h3>Mascadores de Páginas</h3>
+					<h3>Marcadores de Páginas</h3>
 				</div>
 				<div class="select-markers">
 					<div class="free-page-marker select-marker">
@@ -130,7 +133,7 @@
 					<h3>Calcular Frete do Livro</h3>
 				</div>
 				<div class="input-cep">
-					<input type="text" id="cep" name="cep" placeholder="CEP..." maxlength="9">
+					<input type="text" id="cep1" name="cep1" placeholder="CEP..." maxlength="9">
 					<button>Calcular Frete</button>
 				</div>
 				<div class="select-sizes-book-shipping">
@@ -191,7 +194,10 @@
 					<div class="form-right form">
 						<input type="text" name="" id="" placeholder="Rua, Número">
 						<input type="text" name="" id="" placeholder="Complemento">
-						<input type="text" name="" id="" placeholder="Bairro">
+						<div class="two-inputs-form">
+							<input type="text" name="" id="" class="forms-two-inputs" placeholder="Bairro">
+							<input type="text" id="cep2" class="forms-two-inputs" name="cep2" placeholder="Cep..." maxlength="9">
+						</div>
 						<input type="tel" name="" id="" placeholder="Cidade">
 					</div>
 				</div>

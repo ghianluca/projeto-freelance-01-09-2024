@@ -226,6 +226,18 @@ header span {
     padding: 20px;
 }
 
+.two-inputs-pages, .two-inputs-form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.info-book-right .info-book-inputs-two {
+    padding: 20px;
+    width: 50%;
+}
+
 .info-book-right .info-book-selects {
     padding: 20px;
 }
@@ -672,6 +684,11 @@ header span {
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+
+.forms-two-inputs {
+    padding: 20px;
+    width: 50%;
 }
 
 .form input {

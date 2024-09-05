@@ -17,7 +17,7 @@ function alterarQuantidade(valor) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    const cepInput = document.getElementById('cep');
+    const cepInput = document.getElementById('cep1');
 
     cepInput.addEventListener('input', () => {
         let value = cepInput.value.replace(/\D/g, '');
@@ -27,6 +27,25 @@ document.addEventListener('DOMContentLoaded', () => {
         cepInput.value = value;
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const cepInput = document.getElementById('cep2');
+
+    cepInput.addEventListener('input', () => {
+        let value = cepInput.value.replace(/\D/g, '');
+        if (value.length > 5) {
+            value = value.slice(0, 5) + '-' + value.slice(5, 8);
+        }
+        cepInput.value = value;
+    });
+});
+
+const cep1 = document.getElementById('cep1');
+const cep2 = document.getElementById('cep2');
+
+  cep1.addEventListener('input', function() {
+    cep2.value = cep1.value;
+  });
 
 document.getElementById('submitBtn').addEventListener('click', function() {
     const infoBookInputs = document.querySelectorAll('.section-info-book .info-book-inputs, .section-info-book .info-book-selects');
