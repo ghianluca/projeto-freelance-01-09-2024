@@ -145,3 +145,12 @@ document.getElementById('submitBtn').addEventListener('click', function() {
         alert('Por favor, preencha todos os campos.');
     }
 });
+
+const sizeOptions = document.querySelectorAll('input[name="book-size"]');
+const summarySize = document.getElementById('summarySize');
+
+sizeOptions.forEach(option => {
+    option.addEventListener('change', function() {
+        summarySize.textContent = ' ' + this.value;
+    });
+});

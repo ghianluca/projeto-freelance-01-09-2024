@@ -73,7 +73,7 @@
 						<label for="size-16-23">16x23 cm</label>
 					</div>
 					<div class="size-21-29 select-size">
-						<input type="radio" id="size-21-29" name="book-size" value="21x29">
+						<input type="radio" id="size-21-29" name="book-size" value="21x29,7">
 						<label for="size-21-29">21x29,7 cm</label>
 					</div>
 				</div>
@@ -134,7 +134,7 @@
 				</div>
 				<div class="input-cep">
 					<input type="text" id="cep1" name="cep1" placeholder="CEP..." maxlength="9">
-					<button>Calcular Frete</button>
+					<button id="calcularFrete">Calcular Frete</button>
 				</div>
 				<div class="select-sizes-book-shipping">
 					<div class="select-size-carrier">
@@ -146,8 +146,8 @@
 					<div class="select-size-carrier">
 						<input type="radio" id="sedex-correios" name="book-shipping" value="Sedex">
 						<label for="sedex-correios">Sedex *Correios</label>
-						<div class="background-label"><span>R$ 45,69</span></div>
-						<div class="background-label-3"><span>Entrega 3 Dias Uteis</span></div>
+						<div class="background-label"><span id="shippingPrice">R$ 45,69</span></div>
+						<div class="background-label-3"><span>Entrega <span id="shippingDay">3</span> Dias Uteis</span></div>
 					</div>
 					<div class="select-size-carrier">
 						<input type="radio" id="retirada-na-grafica" name="book-shipping" value="Retirada na Grafica">
@@ -165,16 +165,16 @@
 				</div>
 				<div class="container-left-right">
 					<div class="summary-left">
-						<span><strong>Tamanho:</strong> </span>
-						<span><strong>Papel da Capa:</strong> </span>
-						<span><strong>Cor da Capa:</strong> </span>
-						<span><strong>Acabamento:</strong> </span>
+						<span><strong>Tamanho:</strong><span id="summarySize"> Escolhendo...</span></span>
+						<span><strong>Papel da Capa:</strong><span id="summaryCover"> Escolhendo...</span></span>
+						<span><strong>Cor da Capa:</strong><span id="summaryCoverColor"> Escolhendo...</span></span>
+						<span><strong>Acabamento:</strong><span id="summaryFinish"> Escolhendo...</span></span>
 					</div>
 					<div class="summary-right">
-						<span><strong>Papel do Miolo:</strong> </span>
-						<span><strong>Cor do Miolo:</strong> </span>
-						<span><strong>Quantidade de Páginas:</strong> </span>
-						<span><strong>Enobrecimento:</strong> </span>
+						<span><strong>Papel do Miolo:</strong><span id="summaryCore"> Escolhendo...</span></span>
+						<span><strong>Cor do Miolo:</strong><span id="summaryCoreColor"> Escolhendo...</span></span>
+						<span><strong>Quantidade de Páginas:</strong><span id="summaryQuantityPages"> Escolhendo...</span></span>
+						<span><strong>Enobrecimento:</strong><span id="summaryShrink"> Escolhendo...</span></span>
 					</div>
 				</div>
 			</div>
@@ -219,6 +219,7 @@
 			</div>
 		</div>
 	</main>
+	<script src="/scripts/calculate_shipping.js"></script>
     <script src="/scripts/script.js"></script>
 </body>
 </html>

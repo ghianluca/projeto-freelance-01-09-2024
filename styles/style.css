@@ -659,7 +659,7 @@ header span {
     justify-content: center;
     width: 100vw;
     height: auto;
-    padding: 50px 500px 0 10%;
+    padding: 50px 500px 50px 10%;
 }
 
 .container-address-form {
